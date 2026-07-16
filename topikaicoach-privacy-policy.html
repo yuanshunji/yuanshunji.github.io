@@ -1,0 +1,426 @@
+<title>Privacy Policy — TOPIK AI Coach</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for TOPIK AI Coach — Korean language learning app.">
+
+<style>
+  /* ── Tokens ── */
+  :root {
+    --ink:          #111827;
+    --ink-2:        #4B5563;
+    --ink-3:        #9CA3AF;
+    --ground:       #FFFFFF;
+    --surface:      #F1F5FB;
+    --border:       #DDE3EE;
+    --accent:       #1D4ED8;
+    --accent-soft:  #DBEAFE;
+    --radius:       10px;
+    --col:          660px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:         #F1F5F9;
+      --ink-2:       #94A3B8;
+      --ink-3:       #475569;
+      --ground:      #0C0F1A;
+      --surface:     #141825;
+      --border:      #1E2535;
+      --accent:      #60A5FA;
+      --accent-soft: #1E3A5F;
+    }
+  }
+  :root[data-theme="light"] {
+    --ink:         #111827;
+    --ink-2:       #4B5563;
+    --ink-3:       #9CA3AF;
+    --ground:      #FFFFFF;
+    --surface:     #F1F5FB;
+    --border:      #DDE3EE;
+    --accent:      #1D4ED8;
+    --accent-soft: #DBEAFE;
+  }
+  :root[data-theme="dark"] {
+    --ink:         #F1F5F9;
+    --ink-2:       #94A3B8;
+    --ink-3:       #475569;
+    --ground:      #0C0F1A;
+    --surface:     #141825;
+    --border:      #1E2535;
+    --accent:      #60A5FA;
+    --accent-soft: #1E3A5F;
+  }
+
+  /* ── Reset ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    background: var(--ground);
+    color: var(--ink);
+    line-height: 1.7;
+    padding: 0 20px 80px;
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  /* ── Layout ── */
+  .page {
+    max-width: var(--col);
+    margin: 0 auto;
+  }
+
+  /* ── Header ── */
+  .site-header {
+    padding: 40px 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+  }
+  .logo-mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(29, 78, 216, 0.25);
+  }
+  .logo-mark span {
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: -0.5px;
+  }
+  .header-text {}
+  .app-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: 0.01em;
+  }
+  .page-label {
+    font-size: 13px;
+    color: var(--ink-2);
+    margin-top: 1px;
+  }
+
+  /* ── Language toggle ── */
+  .lang-toggle {
+    display: flex;
+    gap: 4px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px;
+    width: fit-content;
+    margin-bottom: 36px;
+  }
+  .lang-btn {
+    padding: 6px 18px;
+    border: none;
+    background: transparent;
+    color: var(--ink-2);
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    font-family: inherit;
+    letter-spacing: 0.02em;
+  }
+  .lang-btn.active {
+    background: var(--ground);
+    color: var(--accent);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+
+  /* ── Content visibility ── */
+  .lang-content { display: none; }
+  .lang-content.visible { display: block; }
+
+  /* ── Overview card ── */
+  .overview-card {
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .overview-card p {
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .effective-date {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* ── Sections ── */
+  .policy-section {
+    padding: 24px 0 24px 20px;
+    border-left: 2px solid var(--border);
+    margin-bottom: 4px;
+    transition: border-color 0.2s;
+  }
+  .policy-section:hover {
+    border-left-color: var(--accent);
+  }
+  .policy-section + .policy-section {
+    margin-top: 12px;
+  }
+  .section-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .section-icon {
+    font-size: 15px;
+    line-height: 1;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    text-wrap: balance;
+    line-height: 1.4;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ink-2);
+    line-height: 1.75;
+  }
+
+  /* ── Footer ── */
+  .site-footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--ink-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .footer-app {
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+</style>
+
+<div class="page">
+
+  <header class="site-header">
+    <div class="logo-mark"><span>한</span></div>
+    <div class="header-text">
+      <div class="app-name">TOPIK AI Coach</div>
+      <div class="page-label">Privacy Policy</div>
+    </div>
+  </header>
+
+  <div class="lang-toggle" role="tablist" aria-label="Language">
+    <button class="lang-btn active" id="btn-en" role="tab" aria-selected="true"  onclick="setLang('en')">English</button>
+    <button class="lang-btn"        id="btn-ja" role="tab" aria-selected="false" onclick="setLang('ja')">日本語</button>
+  </div>
+
+  <!-- ═══════════════ ENGLISH ═══════════════ -->
+  <div id="content-en" class="lang-content visible" role="tabpanel" aria-labelledby="btn-en">
+
+    <div class="overview-card">
+      <span class="effective-date">Effective Date: July 9, 2026</span>
+      <p>This policy explains how TOPIK AI Coach handles learning data, audio, and advertising. No account is required to use the app.</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">📱</span>
+        <span class="section-label">Data Storage</span>
+      </div>
+      <div class="section-title">No Account Required</div>
+      <p class="section-body">TOPIK AI Coach does not require account creation, login, or entry of a name or email address. No personally identifiable information is collected by the app itself.</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">📊</span>
+        <span class="section-label">On-Device Only</span>
+      </div>
+      <div class="section-title">Learning Data</div>
+      <p class="section-body">The app stores learning history locally on your device, including answered questions, correct answers, accuracy rate, category performance, earned stars, and last study date. This data is used solely to display your results and learning history within the app, and is never transmitted to any developer server or external service.</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">📢</span>
+        <span class="section-label">Advertising</span>
+      </div>
+      <div class="section-title">Ads (Google AdMob)</div>
+      <p class="section-body">This app may display ads via Google AdMob. Ad providers may collect device information, advertising identifiers (IDFA), IP address, and ad impression or click data to serve, limit, measure, and protect ads from abuse. You will be asked for permission via Apple's App Tracking Transparency (ATT) prompt before any advertising identifier is accessed. You can change your advertising and personalized ad preferences at any time in the iOS Settings app.</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">🔊</span>
+        <span class="section-label">Audio</span>
+      </div>
+      <div class="section-title">Audio Playback</div>
+      <p class="section-body">The app uses the device's text-to-speech feature to read Korean questions aloud. The app does not record microphone audio and does not collect or store the user's voice in any form.</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">🔗</span>
+        <span class="section-label">Third Parties</span>
+      </div>
+      <div class="section-title">Third-Party Services</div>
+      <p class="section-body">Google AdMob may be used for ad delivery. Data handled by third-party services is governed by their respective privacy policies. Google's privacy policy is available at <strong>policies.google.com/privacy</strong>.</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">🔧</span>
+        <span class="section-label">Your Controls</span>
+      </div>
+      <div class="section-title">User Controls</div>
+      <p class="section-body">You can manage your advertising identifier, limit ad tracking, and change personalized ad settings at any time in <strong>iOS Settings → Privacy & Security → Tracking</strong>.</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">👶</span>
+        <span class="section-label">Age</span>
+      </div>
+      <div class="section-title">Children</div>
+      <p class="section-body">TOPIK AI Coach is intended for Korean language learners of all ages. The app does not intentionally collect names, contact details, or any personally identifiable information from children. Minors should use the app with guardian awareness.</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">✉️</span>
+        <span class="section-label">Get in Touch</span>
+      </div>
+      <div class="section-title">Contact</div>
+      <p class="section-body">For privacy-related questions, please contact us through the developer support channel listed on the App Store page for TOPIK AI Coach.</p>
+    </div>
+
+  </div><!-- /content-en -->
+
+  <!-- ═══════════════ JAPANESE ═══════════════ -->
+  <div id="content-ja" class="lang-content" role="tabpanel" aria-labelledby="btn-ja">
+
+    <div class="overview-card">
+      <span class="effective-date">制定日：2026年7月9日</span>
+      <p>本ポリシーは、TOPIK AI Coach（以下「本アプリ」）が扱うデータ・音声・広告に関する取り扱いについて説明します。本アプリの利用にアカウント登録は不要です。</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">📱</span>
+        <span class="section-label">基本方針</span>
+      </div>
+      <div class="section-title">アカウント登録不要</div>
+      <p class="section-body">本アプリは、アカウント作成・ログイン・氏名・メールアドレスの入力を必要としません。アプリ自体がユーザーの個人を特定できる情報を収集することはありません。</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">📊</span>
+        <span class="section-label">端末内保存</span>
+      </div>
+      <div class="section-title">学習データ</div>
+      <p class="section-body">回答数、正解数、正答率、カテゴリ別成績、獲得スター、最終学習日などの学習履歴を端末内に保存します。これらのデータは結果画面や学習履歴の表示のみに使用され、開発者のサーバーや外部サービスへ送信されることはありません。</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">📢</span>
+        <span class="section-label">広告</span>
+      </div>
+      <div class="section-title">広告（Google AdMob）</div>
+      <p class="section-body">本アプリは広告表示のためにGoogle AdMobを使用する場合があります。広告配信事業者は、広告の表示・制限・効果測定・不正利用防止のために、端末情報・広告識別子（IDFA）・IPアドレス・広告の表示やクリック情報を取得する場合があります。広告識別子へのアクセスに先立ち、AppleのApp Tracking Transparency（ATT）ダイアログで許可を求めます。パーソナライズ広告の設定はiOSの設定アプリからいつでも変更できます。</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">🔊</span>
+        <span class="section-label">音声</span>
+      </div>
+      <div class="section-title">音声読み上げ</div>
+      <p class="section-body">問題の読み上げには端末の音声読み上げ機能（TTS）を使用します。本アプリはマイク録音を行わず、ユーザーの音声を収集・保存しません。</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">🔗</span>
+        <span class="section-label">第三者サービス</span>
+      </div>
+      <div class="section-title">第三者サービス</div>
+      <p class="section-body">広告配信にはGoogle AdMobが関与する場合があります。第三者サービスによるデータの取り扱いは、各事業者のプライバシーポリシーに従います。Googleのプライバシーポリシーは <strong>policies.google.com/privacy</strong> でご確認いただけます。</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">🔧</span>
+        <span class="section-label">ユーザーによる管理</span>
+      </div>
+      <div class="section-title">設定の変更</div>
+      <p class="section-body">広告識別子の管理、広告トラッキングの制限、パーソナライズ広告の設定は、<strong>iOSの設定 → プライバシーとセキュリティ → トラッキング</strong> からいつでも変更できます。</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">👶</span>
+        <span class="section-label">年齢</span>
+      </div>
+      <div class="section-title">未成年の利用</div>
+      <p class="section-body">本アプリは年齢を問わず韓国語学習を目的としたアプリです。本アプリは未成年者から氏名・連絡先などの個人情報を意図的に収集しません。未成年の方が利用する場合は、保護者の確認のもとでご利用ください。</p>
+    </div>
+
+    <div class="policy-section">
+      <div class="section-eyebrow">
+        <span class="section-icon">✉️</span>
+        <span class="section-label">お問い合わせ</span>
+      </div>
+      <div class="section-title">お問い合わせ</div>
+      <p class="section-body">プライバシーに関するご質問は、App StoreのTOPIK AI Coachページに記載の開発者サポート窓口までお問い合わせください。</p>
+    </div>
+
+  </div><!-- /content-ja -->
+
+  <footer class="site-footer">
+    <span class="footer-app">TOPIK AI Coach</span>
+    <span>© 2026 — All rights reserved</span>
+  </footer>
+
+</div><!-- /page -->
+
+<script>
+  function setLang(lang) {
+    ['en', 'ja'].forEach(function(l) {
+      document.getElementById('content-' + l).classList.toggle('visible', l === lang);
+      var btn = document.getElementById('btn-' + l);
+      btn.classList.toggle('active', l === lang);
+      btn.setAttribute('aria-selected', String(l === lang));
+    });
+  }
+</script>
